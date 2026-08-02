@@ -1,0 +1,530 @@
+{
+  "smiles": "ZINC001371026073",
+  "targets": {
+    "mwt": 0.9223189221632002,
+    "logp": -1.182089049790596,
+    "reactive": -0.33830244114375835
+  },
+  "atoms": {
+    "a0": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 3,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b0": {
+          "atom": "a3",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a1": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 0,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": true,
+      "bonds": {
+        "b14": {
+          "atom": "a22",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b15": {
+          "atom": "a4",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        },
+        "b23": {
+          "atom": "a19",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a2": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 1,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": true,
+      "bonds": {
+        "b20": {
+          "atom": "a8",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        },
+        "b21": {
+          "atom": "a11",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a3": {
+      "element": "O",
+      "atomic_number": 8,
+      "formal_charge": 0,
+      "n_hydrogens": 0,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b0": {
+          "atom": "a0",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b1": {
+          "atom": "a12",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a4": {
+      "element": "N",
+      "atomic_number": 7,
+      "formal_charge": 0,
+      "n_hydrogens": 0,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": true,
+      "bonds": {
+        "b15": {
+          "atom": "a1",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        },
+        "b16": {
+          "atom": "a13",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a5": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 3,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b2": {
+          "atom": "a12",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a6": {
+      "element": "O",
+      "atomic_number": 8,
+      "formal_charge": 0,
+      "n_hydrogens": 0,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b13": {
+          "atom": "a22",
+          "order": 2.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a7": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 2,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b9": {
+          "atom": "a18",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b10": {
+          "atom": "a10",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a8": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 1,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": true,
+      "bonds": {
+        "b19": {
+          "atom": "a23",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        },
+        "b20": {
+          "atom": "a2",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a9": {
+      "element": "O",
+      "atomic_number": 8,
+      "formal_charge": 0,
+      "n_hydrogens": 0,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b4": {
+          "atom": "a14",
+          "order": 2.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a10": {
+      "element": "N",
+      "atomic_number": 7,
+      "formal_charge": 0,
+      "n_hydrogens": 0,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b10": {
+          "atom": "a7",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b11": {
+          "atom": "a16",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b12": {
+          "atom": "a22",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a11": {
+      "element": "N",
+      "atomic_number": 7,
+      "formal_charge": 0,
+      "n_hydrogens": 0,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": true,
+      "bonds": {
+        "b21": {
+          "atom": "a2",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        },
+        "b22": {
+          "atom": "a19",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a12": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 1,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_TETRAHEDRAL_CCW",
+      "aromatic": false,
+      "bonds": {
+        "b1": {
+          "atom": "a3",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b2": {
+          "atom": "a5",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b3": {
+          "atom": "a14",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a13": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 1,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": true,
+      "bonds": {
+        "b16": {
+          "atom": "a4",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        },
+        "b17": {
+          "atom": "a15",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a14": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 0,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b3": {
+          "atom": "a12",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b4": {
+          "atom": "a9",
+          "order": 2.0,
+          "stereo": "STEREONONE"
+        },
+        "b5": {
+          "atom": "a17",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a15": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 1,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": true,
+      "bonds": {
+        "b17": {
+          "atom": "a13",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        },
+        "b18": {
+          "atom": "a23",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a16": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 3,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b11": {
+          "atom": "a10",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a17": {
+      "element": "N",
+      "atomic_number": 7,
+      "formal_charge": 0,
+      "n_hydrogens": 1,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b5": {
+          "atom": "a14",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b6": {
+          "atom": "a21",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a18": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 1,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_TETRAHEDRAL_CCW",
+      "aromatic": false,
+      "bonds": {
+        "b7": {
+          "atom": "a21",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b8": {
+          "atom": "a20",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b9": {
+          "atom": "a7",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a19": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 0,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": true,
+      "bonds": {
+        "b22": {
+          "atom": "a11",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        },
+        "b23": {
+          "atom": "a1",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        },
+        "b24": {
+          "atom": "a23",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a20": {
+      "element": "O",
+      "atomic_number": 8,
+      "formal_charge": 0,
+      "n_hydrogens": 1,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b8": {
+          "atom": "a18",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a21": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 2,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b6": {
+          "atom": "a17",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b7": {
+          "atom": "a18",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a22": {
+      "element": "C",
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "n_hydrogens": 0,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": false,
+      "bonds": {
+        "b12": {
+          "atom": "a10",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        },
+        "b13": {
+          "atom": "a6",
+          "order": 2.0,
+          "stereo": "STEREONONE"
+        },
+        "b14": {
+          "atom": "a1",
+          "order": 1.0,
+          "stereo": "STEREONONE"
+        }
+      }
+    },
+    "a23": {
+      "element": "N",
+      "atomic_number": 7,
+      "formal_charge": 0,
+      "n_hydrogens": 0,
+      "n_radical_electrons": 0,
+      "chirality": "CHI_UNSPECIFIED",
+      "aromatic": true,
+      "bonds": {
+        "b18": {
+          "atom": "a15",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        },
+        "b19": {
+          "atom": "a8",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        },
+        "b24": {
+          "atom": "a19",
+          "order": 1.5,
+          "stereo": "STEREONONE"
+        }
+      }
+    }
+  },
+  "canonical_smiles": "CO[C@H](C)C(=O)NC[C@H](O)CN(C)C(=O)c1nccn2ccnc12",
+  "inchi": "InChI=1S/C15H21N5O4/c1-10(24-3)14(22)18-8-11(21)9-19(2)15(23)12-13-17-5-7-20(13)6-4-16-12/h4-7,10-11,21H,8-9H2,1-3H3,(H,18,22)/t10-,11+/m1/s1",
+  "inchi_key": "XAOSWIMFXDDZGT-MNOVXSKESA-N",
+  "formula": "C15H21N5O4",
+  "exact_mass": 335.159354152,
+  "net_charge": 0
+}
