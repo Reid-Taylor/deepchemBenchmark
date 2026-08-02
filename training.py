@@ -128,7 +128,17 @@ def trainer(logger):
         logger=logger,
     )
 
-logger = WandbLogger(project="deepchem", name=datetime.now().strftime("%Y-%m-%d %H:%M"))
+logger = WandbLogger(
+    entity="rebridgers-independent", 
+    project="deepchem", 
+    name=datetime.now().strftime("%Y-%m-%d %H:%M"),
+    config={
+        "learning_rate": 2e-5,
+        "architecture": "Json2Vec",
+        "dataset": "Zinc15",
+        "min_epochs": 150,
+    },
+)
 
 # phase: pretrain
 model.update(dropout=0.05)
