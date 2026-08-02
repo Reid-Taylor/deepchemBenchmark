@@ -3,7 +3,7 @@ name = "deepchembenchmark"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13,<3.14"
+requires-python = ">=3.12,<3.14"
 dependencies = [
     "chembl-webresource-client>=0.10.9",
     "deepchem>=2.8.0",
