@@ -10,7 +10,6 @@ import pyarrow.parquet as pq
 from rdkit import Chem
 from rdkit.Chem import inchi, rdMolDescriptors
 
-
 BOND_STRUCT = pa.struct([
     ("id",     pa.string()),
     ("atom",   pa.string()),

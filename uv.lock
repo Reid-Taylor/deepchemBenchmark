@@ -344,6 +344,8 @@ dependencies = [
     { name = "json2vec" },
     { name = "pdbfixer" },
     { name = "polars" },
+    { name = "pyarrow" },
+    { name = "rdkit" },
     { name = "requests" },
     { name = "torch" },
 ]
@@ -356,6 +358,8 @@ requires-dist = [
     { name = "json2vec", git = "https://github.com/json2vec/json2vec.git?rev=dev%2Fglobal-entity" },
     { name = "pdbfixer", specifier = ">=1.12.0" },
     { name = "polars", specifier = ">=1.43.2" },
+    { name = "pyarrow", specifier = ">=25.0.0" },
+    { name = "rdkit", specifier = ">=2026.3.4" },
     { name = "requests", specifier = ">=2.34.2" },
     { name = "torch", specifier = ">=2.13.0" },
 ]
