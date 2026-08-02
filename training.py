@@ -46,9 +46,9 @@ def molecule_row(observation: dict) -> Observation:
 
 model = jv.Model.from_tree(
     name="molecule",
-    d_model=4,
-    n_layers=2,
-    n_heads=2,
+    d_model=256,
+    n_layers=8,
+    n_heads=16,
     embed=True,
 
     targets = jv.Branch(
@@ -58,7 +58,7 @@ model = jv.Model.from_tree(
     ),
 
     atoms = jv.Branch(
-        length              = 64,
+        length              = 96,
         id                  = jv.StaticEntity(group="atoms"),
         element             = jv.Category(capacity=120, ),
         atomic_number       = jv.Category(capacity=120, ),
@@ -78,7 +78,7 @@ model = jv.Model.from_tree(
     ),
 
     structure = jv.Branch(
-        length = 64,
+        length = 96,
         nodes = jv.StaticEntity(group="atoms"),
         edges = jv.Branch(
             length = 8,
@@ -90,7 +90,7 @@ model = jv.Model.from_tree(
     ),
 
     canonical_smiles = jv.Branch(
-        length = 512,
+        length = 1024,
         char = jv.Category(capacity=100, ),
     ),
 
@@ -121,9 +121,6 @@ def trainer(logger):
             jv.RollbackCheckpoint(monitor="loss/validate", mode="min"),
             EarlyStopping(monitor="loss/validate", mode="min", patience=10),
         ],
-        limit_train_batches=100,
-        limit_val_batches=50,
-        limit_test_batches=50,
         min_epochs=150,
         logger=logger,
     )
