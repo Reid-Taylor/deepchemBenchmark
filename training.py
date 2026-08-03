@@ -1,15 +1,21 @@
+import os
 from datetime import datetime
 from functools import partial
 from pathlib import Path
 
 import json2vec as jv
 import lightning.pytorch as lit
+import wandb
 from json2vec.data.datasets.streaming import StreamingDataModule
 from json2vec.data.processors import Observation, preprocess
 from json2vec.structs.enums import Suffix
 from lightning.pytorch.callbacks import EarlyStopping
 from lightning.pytorch.loggers import WandbLogger
 from torch.optim import AdamW
+
+# shared Unix account: force wandb to use MY key, never ~/.netrc
+assert os.environ.get("WANDB_API_KEY"), "source ~/reid/wandb.env before running"
+wandb.login(key=os.environ["WANDB_API_KEY"], relogin=True)
 
 
 def adamw(lr: float, **kwargs) -> partial:
