@@ -18,8 +18,9 @@ assert os.environ.get("WANDB_API_KEY"), "source ~/reid/wandb.env before running"
 wandb.login(key=os.environ["WANDB_API_KEY"], relogin=True)
 
 
-def adamw(lr: float, **kwargs) -> partial:
-    return partial(AdamW, lr=lr, **kwargs)
+def adamw(lr: float, **kwargs):
+    # json2vec calls model.optimizer(model); AdamW wants an iterable of params
+    return lambda model: AdamW(model.parameters(), lr=lr, **kwargs)
 
 
 @preprocess
