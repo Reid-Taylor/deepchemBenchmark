@@ -148,6 +148,8 @@ model.update(jv.where("type") == "static_entity", p_mask=0.15, p_prune=0.05)
 model.update(jv.where("type") == "category", p_mask=0.15, p_prune=0.05)
 model.update(jv.where("type") == "number", p_mask=0.15, p_prune=0.05)
 model.update(jv.where("type") == "boolean", p_mask=0.15, p_prune=0.05)
+model.optimizer = adamw(2e-5, weight_decay=0.01)
+
 trainer(logger).fit(model=model, datamodule=datamodule)
 
 # phase: finetune
