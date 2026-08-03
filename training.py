@@ -45,7 +45,6 @@ def molecule_row(observation: dict) -> Observation:
 
 
 model = jv.Model.from_tree(
-    name="molecule",
     d_model=256,
     n_layers=8,
     n_heads=16,
@@ -139,11 +138,17 @@ logger = WandbLogger(
 
 # phase: pretrain
 model.update(dropout=0.05)
-model.update(jv.where("type") != "array", p_mask=0.15, p_prune=0.05)
+model.update(jv.where("type") == "static_entity", p_mask=0.15, p_prune=0.05)
+model.update(jv.where("type") == "category", p_mask=0.15, p_prune=0.05)
+model.update(jv.where("type") == "number", p_mask=0.15, p_prune=0.05)
+model.update(jv.where("type") == "boolean", p_mask=0.15, p_prune=0.05)
 trainer(logger).fit(model=model, datamodule=datamodule)
 
 # phase: finetune
-model.update(jv.where("type") != "array", p_mask=0.0, p_prune=0.0)
+model.update(jv.where("type") == "static_entity", p_mask=0.0, p_prune=0.0)
+model.update(jv.where("type") == "category", p_mask=0.0, p_prune=0.0)
+model.update(jv.where("type") == "number", p_mask=0.0, p_prune=0.0)
+model.update(jv.where("type") == "boolean", p_mask=0.0, p_prune=0.0)
 model.update(jv.where("name") == "mwt", p_mask=0.5, p_prune=0.3)
 model.update(jv.where("name") == "logp", p_mask=0.5, p_prune=0.3)
 model.update(jv.where("name") == "reactive", p_mask=0.5, p_prune=0.3)
