@@ -164,7 +164,7 @@ def export_split(split, split_name: str, tasks_tuple: tuple[str, ...], out_dir: 
 def main() -> None:
     tasks, datasets, _transformers = dc.molnet.load_zinc15(
         featurizer="Raw",
-        dataset_size="10M",
+        dataset_size="250K",
         reload=True,
     )
     train, valid, test = datasets
