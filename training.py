@@ -1,6 +1,5 @@
 import os
 from datetime import datetime
-from functools import partial
 from pathlib import Path
 
 import json2vec as jv
@@ -30,7 +29,31 @@ def molecule_row(observation: dict) -> Observation:
     smi = row.get("canonical_smiles") or ""
     row["canonical_smiles"] = [{"char": c} for c in smi]
 
-    row.update(row.pop("targets", None) or {})
+    targets = row.pop("targets", None) or {}
+    row["targets"] = {
+        "mwt":      targets.get("mwt",None),
+        "logp":     targets.get("logp",None),
+        "reactive": targets.get("reactive",None),
+    }
+
+    row["exact_mass"] = row.get("exact_mass",None)
+    row["net_charge"] = row.get("net_charge",None)
+
+    atoms = row.get("atoms") or []
+    row["atoms"] = [
+        {
+            "id":                  a.get("id",None),
+            "element":             a.get("element",None),
+            "atomic_number":       a.get("atomic_number",None),
+            "formal_charge":       a.get("formal_charge",None),
+            "n_hydrogens":         a.get("n_hydrogens",None),
+            "n_radical_electrons": a.get("n_radical_electrons",None),
+            "chirality":           a.get("chirality",None),
+            "aromatic":            a.get("aromatic",None),
+            "bonds":               a.get("bonds") or [],
+        }
+        for a in atoms
+    ]
 
     # explode {nodes, edges} into per-atom adjacency records to match the schema
     structure = row.pop("structure", None) or {}
