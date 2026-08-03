@@ -30,11 +30,11 @@ def molecule_row(observation: dict) -> Observation:
     row["canonical_smiles"] = [{"char": c} for c in smi]
 
     targets = row.pop("targets", None) or {}
-    row["targets"] = {
+    row["targets"] = [{
         "mwt":      targets.get("mwt",None),
         "logp":     targets.get("logp",None),
         "reactive": targets.get("reactive",None),
-    }
+    }]
 
     row["exact_mass"] = row.get("exact_mass",None)
     row["net_charge"] = row.get("net_charge",None)
