@@ -78,6 +78,7 @@ model = jv.Model.from_tree(
     d_model=256,
     n_layers=8,
     n_heads=16,
+    batch_size=1000,
     embed=True,
 
     targets = jv.Branch(
@@ -152,6 +153,9 @@ def trainer(logger):
         ],
         min_epochs=150,
         logger=logger,
+        limit_train_batches=35000,
+        limit_val_batches=50000,
+        limit_test_batches=25000
     )
 
 logger = WandbLogger(
