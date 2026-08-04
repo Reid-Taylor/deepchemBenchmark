@@ -75,10 +75,10 @@ def molecule_row(observation: dict) -> Observation:
 
 
 model = jv.Model.from_tree(
-    d_model=256,
+    d_model=128,
     n_layers=8,
-    n_heads=16,
-    batch_size=100,
+    n_heads=8,
+    batch_size=25,
     embed=True,
 
     targets = jv.Branch(
