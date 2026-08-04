@@ -78,7 +78,7 @@ model = jv.Model.from_tree(
     d_model=256,
     n_layers=8,
     n_heads=16,
-    batch_size=1000,
+    batch_size=100,
     embed=True,
 
     targets = jv.Branch(
